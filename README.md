@@ -21,10 +21,15 @@ None
 
 The last line contains a list of all frozen atoms.
 
-Next, to use the script, follow this general command:
+Next, to use the script, follow this general command if you want a POSCAR file with cartesian coordinates.
 
 ```
 python -i XYZtoPOSCARCartesian.py -inp1 <CELL_VECTOR_FILE> -inp2 <XYZ_INPUT_FILE> -out <OUTPUT_FILE_NAME>
 ```
 
-This script should convert some general single-frame .xyz file into a POSCAR file in cartesian coordinates.
+If you want fractional coordinates for the POSCAR file, use:
+```
+python -i XYZtoFractionalPOSCAR.py -inp1 <CELL_VECTOR_FILE> -inp2 <XYZ_INPUT_FILE> -out <OUTPUT_FILE_NAME>
+```
+
+This script should convert some general single-frame .xyz file into a POSCAR file in cartesian coordinates or fractional coordinates.
