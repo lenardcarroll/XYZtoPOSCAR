@@ -9,7 +9,7 @@ parser.add_argument("-inp2", "--input2", dest = "input2", default = "0.xyz", hel
 parser.add_argument("-out", "--output", dest = "output", default = "POSCAR", help="Name of your output file")
 args = parser.parse_args()
 
-#Read in the input file contacting the vector
+#Read in the input file containing the vector
 f = open(args.input1,"r")
 content = f.readlines()
 #Get the scaling factor/lattice constants
@@ -90,7 +90,7 @@ for i in range(2,len(content)):
     Atoms.append(content[i].split()[0])
     AtomCoords.append([float(content[i].split()[1]),float(content[i].split()[2]),float(content[i].split()[3])])
 
-#We write the output fil3
+#We write the output file
 h = open(args.output,"w")
 #We add a title to the top of the POSCAR file
 print("XYZ to POSCAR",file=h)
