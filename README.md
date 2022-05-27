@@ -9,6 +9,7 @@ Before using this script, create a file that contains only the scaling factor (l
   0.0000000001313560  0.0000000000558372 10.0000000000000000
 1-20,24,25,29,35-74
 ```
+If no atoms are frozen/fixed, then add 'None' at the bottom, like:
 
 ```
  1.00000000000000     
@@ -17,10 +18,6 @@ Before using this script, create a file that contains only the scaling factor (l
   0.0000000001313560  0.0000000000558372 10.0000000000000000
 None
 ```
-
-If no atoms are frozen/fixed, then add 'None' at the bottom, like:
-
-
 
 The last line contains a list of all frozen atoms.
 
